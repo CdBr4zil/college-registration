@@ -6,12 +6,12 @@ Ideia do projeto veio de um trabalho da faculdade. Estou desenvolvendo o código
 
 Sistema de cadastro para faculdades, com funcionalidades para gerenciar Cursos, Professores e Alunos.
 
-🚀 Funcionalidades
+# 🚀 Funcionalidades
 
 - Cadastro de informações essenciais de alunos e professores, com geração automática de registros únicos.
 - Implementação de validador de CPF para verificar a validade do documento.
 
-🛠 Tecnologias
+# 🛠 Tecnologias
 
 - Python 3.13.1
 - SQL
