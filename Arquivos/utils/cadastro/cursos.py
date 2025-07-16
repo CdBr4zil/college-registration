@@ -1,24 +1,20 @@
-def confirmar_dado(pergunta):
-    while True:
-        valor = input(pergunta).strip().upper()
-        confirmar = input(f"Confirma '{valor}'? (S/N): ").strip().upper()
-        if confirmar == 'S':
-            return valor
-        elif confirmar == 'N':
-            print("Digite novamente...\n")
-        else:
-            print('Caracter incorreto')
-            return confirmar
+import os
 
+from utils.confirmacao import confirmar_dado
 
-def curso():
+cursos_cadastrados = [] #Lista temporaria
+
+def cad_curso():
+    print("--Cadastro de Curso--\n")
+
+    nome_curso = confirmar_dado("Digite o nome do Curso: ")
+    cursos_cadastrados.append(nome_curso)
     
-    print("Cadastro de Curso\n")
-
-    nome = confirmar_dado("Digite o nome do Curso: ")
-    professor = confirmar_dado(f"Selecione o professor do curso: ")
-
+    os.system('cls')
     print("\nCadastro finalizado com sucesso!")
-    print(f"Nome: {nome}")
+    print("-" * 40)
+    print(f"Curso cadastrado: {nome_curso}")
+    print("-" * 40 + "\n")
 
-aluno()
+def listar_cursos():
+    return cursos_cadastrados
