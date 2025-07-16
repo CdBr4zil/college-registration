@@ -15,3 +15,10 @@ Sistema de cadastro para faculdades, com funcionalidades para gerenciar Cursos, 
 
 - Python 3.13.1
 - SQL
+
+# ⚙️Atualização
+
+- Adicionei um menu pra poder selecionar a opção de cadastro de alunos, professores e cursos e uma opção para ver a lista que já foi adicionada (ainda não está funcinando 100%)
+- Coloquei um erro pra caso não haja nenhum curso cadastrado, já que não faz muito sentido ter alunos e professores e nenhum curso
+- Por enquanto pra testar o codigo eu fiz listas temporarias pra ver se ta tudo funcionando, proximo passo é integrar a um banco
+- Criei um executavel que funciona sem a necessidade da instalação do Python ou ter que instalar cada codigo
